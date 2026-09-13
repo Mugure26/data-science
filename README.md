@@ -1,190 +1,197 @@
-# Customer Sales Analysis & Business Insights
+# Data Science Portfolio
 
-## Project Overview
+Welcome to my data science portfolio. This repository contains practical projects demonstrating my skills in **data analysis, statistics, SQL, machine learning, and data visualization**.
 
-This project analyzes customer sales data to identify revenue patterns,
-product performance, regional performance, monthly trends, and customer value.
-
-The project demonstrates how Python, SQL, statistics, and data visualization
-can be used to transform sales data into meaningful business insights.
+I use **Python and Google Colab** to explore datasets, identify patterns, build machine learning models, and communicate data-driven insights.
 
 ---
 
-## Business Problem
+## Projects
 
-A retail business wants to understand:
+### 1. Customer Sales Analysis
 
-- Which products generate the most revenue?
-- Which products sell the highest number of units?
-- Which regions perform best?
-- How does revenue change over time?
-- Which product categories generate the most revenue?
-- Who are the most valuable customers?
-- How can the business improve sales performance?
+A business data analysis project focused on understanding sales performance and identifying useful business insights.
 
----
+#### Project Goals
 
-## Objectives
+* Analyze sales revenue and product performance
+* Identify the best-performing regions
+* Analyze monthly revenue trends
+* Compare product categories
+* Analyze customer value
+* Perform customer segmentation
+* Use SQL for business analysis
+* Create data visualizations
+* Provide data-driven recommendations
 
-The main objectives of this project are to:
+#### Tools & Technologies
 
-1. Clean and prepare sales data.
-2. Perform exploratory data analysis.
-3. Calculate important sales KPIs.
-4. Analyze product and regional performance.
-5. Analyze monthly revenue trends.
-6. Perform customer-level analysis.
-7. Segment customers based on revenue.
-8. Use SQL to perform business analysis.
-9. Create visualizations and dashboards.
-10. Provide data-driven business recommendations.
+* Python
+* Pandas
+* NumPy
+* SQL
+* SQLite
+* Matplotlib
+* Seaborn
+* Google Colab
+* Exploratory Data Analysis
 
----
+#### Key Performance Indicators
 
-## Tools & Technologies
+| KPI                       |        Result |
+| ------------------------- | ------------: |
+| Total Revenue             | KSh 2,018,500 |
+| Total Units Sold          |           136 |
+| Total Transactions        |            20 |
+| Average Transaction Value |   KSh 100,925 |
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- SQL
-- SQLite
-- Google Colab
-- Data Visualization
-- Exploratory Data Analysis
+#### Key Findings
 
----
+* **Laptops** generated the highest revenue.
+* **Mice** recorded the highest number of units sold.
+* **Mombasa** generated the highest regional revenue.
+* **Electronics** generated significantly more revenue than accessories.
+* **October** recorded the highest monthly revenue.
+* Customer segmentation was used to identify high-, medium-, and low-value customers.
 
-## Key Performance Indicators
+#### Business Recommendations
 
-| KPI | Result |
-|---|---:|
-| Total Revenue | KSh 2,018,500 |
-| Total Units Sold | 136 |
-| Total Transactions | 20 |
-| Average Transaction Value | KSh 100,925 |
+* Maintain adequate inventory of high-revenue products.
+* Use product bundling to combine electronics with popular accessories.
+* Investigate factors contributing to strong regional performance.
+* Monitor large monthly revenue fluctuations.
+* Develop targeted retention strategies for high-value customers.
 
----
-
-## Key Findings
-
-### Product Performance
-
-Laptops generated the highest revenue in the dataset, while mice
-recorded the highest number of units sold.
-
-This demonstrates that the product with the highest sales volume
-does not necessarily generate the highest revenue.
-
-### Regional Performance
-
-Mombasa recorded the highest revenue among the regions analyzed.
-
-The business can investigate the factors contributing to this
-performance and determine whether successful strategies can be
-applied to other regions.
-
-### Category Performance
-
-Electronics generated significantly more revenue than accessories,
-while accessories recorded higher sales volume.
-
-### Monthly Performance
-
-Revenue varied considerably across the months in the dataset.
-October recorded the highest monthly revenue.
-
-### Customer Analysis
-
-Customer-level analysis was performed to identify high-value,
-medium-value, and low-value customers.
+[View Customer Sales Analysis Notebook](https://github.com/Mugure26/data-science/blob/main/Customer__sales__analysis.ipynb)
 
 ---
 
-## Customer Segmentation
+### 2. House Price Prediction
 
-Customers were segmented according to their total revenue contribution.
+A machine learning project that predicts house prices using property characteristics and regression-based machine learning models.
 
-The segments include:
+The dataset contains **21,613 house records** and features related to property size, location, condition, grade, construction year, waterfront status, and other characteristics.
 
-- High Value
-- Medium Value
-- Low Value
+#### Project Goals
 
-This segmentation can help a business develop targeted marketing
-and customer retention strategies.
+* Clean and prepare housing data
+* Perform exploratory data analysis
+* Analyze relationships between features and house prices
+* Engineer useful features
+* Train multiple regression models
+* Compare model performance
+* Identify the most important factors affecting house prices
+
+#### Models Used
+
+* Linear Regression
+* Decision Tree
+* Random Forest
+
+#### Model Performance
+
+| Model             |  R² Score |        MAE |        RMSE |
+| ----------------- | --------: | ---------: | ----------: |
+| Linear Regression |     0.744 |    115,010 |     196,753 |
+| Decision Tree     |     0.740 |    100,908 |     198,294 |
+| Random Forest     | **0.850** | **72,476** | **150,565** |
+
+#### Best Model
+
+The **Random Forest** model achieved the best overall performance.
+
+* **R²:** 0.850
+* **MAE:** 72,476
+* **RMSE:** 150,565
+
+This indicates that the Random Forest model performed substantially better than the Linear Regression and Decision Tree models on the test data.
+
+#### Important Features
+
+The most influential features identified by the Random Forest model included:
+
+1. **Grade**
+2. **Square footage of living area**
+3. **Latitude**
+4. **Longitude**
+5. **Year built**
+6. **Waterfront status**
+7. **Square footage of nearby living area**
+
+#### Tools & Technologies
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Matplotlib
+* Seaborn
+* Machine Learning
+* Feature Engineering
+* Google Colab
+
+[View House Price Prediction Notebook](https://github.com/Mugure26/data-science/blob/main/house_pricing.ipynb)
 
 ---
 
-## SQL Analysis
+## Skills Demonstrated
 
-SQL was used to calculate:
+### Programming & Data Analysis
 
-- Total revenue
-- Total units sold
-- Revenue by product
-- Revenue by region
-- Revenue by category
-- Monthly revenue
+* Python
+* Pandas
+* NumPy
+* Exploratory Data Analysis
+* Data Cleaning
+* Feature Engineering
 
-The SQL queries are available in:
+### Databases
 
-`sql/sales_analysis.sql`
+* SQL
+* SQLite
 
----
+### Machine Learning
 
-## Business Recommendations
+* Linear Regression
+* Decision Trees
+* Random Forest
+* Model Evaluation
+* Feature Importance
 
-### 1. Focus on High-Value Products
+### Data Visualization
 
-Maintain adequate inventory of high-revenue products such as laptops
-and use targeted marketing campaigns to maximize their contribution.
+* Matplotlib
+* Seaborn
+* Statistical Visualization
 
-### 2. Use Product Bundling
+### Tools
 
-Combine high-value electronics with popular accessories such as mice
-and keyboards to increase transaction value.
-
-### 3. Investigate Regional Performance
-
-Mombasa generated the highest revenue. The business should investigate
-the factors contributing to this performance.
-
-### 4. Monitor Sales Trends
-
-Large monthly fluctuations should be investigated to identify possible
-seasonal patterns, promotions, stock issues, or changes in customer demand.
-
-### 5. Use Customer Segmentation
-
-High-value customers should receive targeted retention strategies,
-while lower-value customers can be encouraged to increase their
-purchase frequency or transaction value.
+* Google Colab
+* GitHub
+* Jupyter Notebooks
 
 ---
 
-## Project Structure
+## Repository Structure
 
 ```text
-Customer-Sales-Analysis/
+data-science/
 │
-├── data/
-│   └── sales_data.csv
-│
-├── notebooks/
-│   └── customer_sales_analysis.ipynb
-│
-├── sql/
-│   └── sales_analysis.sql
-│
-├── visualizations/
-│   └── final_sales_dashboard.png
-│
-├── customer_sales_analysis.py
-├── customer_sales_portfolio.csv
-├── customer_analysis.csv
-├── README.md
-└── requirements.txt
-     
-Writing /content/README.md
+├── Customer__sales__analysis.ipynb
+├── house_pricing.ipynb
+└── README.md
+```
+
+---
+
+## About Me
+
+I am passionate about **data science, machine learning, and artificial intelligence**. I enjoy working with data to discover meaningful insights and building models that can help solve real-world problems.
+
+I am continuously developing my skills through practical projects and hands-on learning.
+
+---
+
+## Connect With Me
+
+**GitHub:** [Mugure26](https://github.com/Mugure26)
